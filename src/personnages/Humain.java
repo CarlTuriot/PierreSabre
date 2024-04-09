@@ -20,7 +20,7 @@ public class Humain {
 	}
 	
 	public void parler(String texte) {
-		System.out.println(nom + " - " + texte + "»");
+		System.out.println("("+nom+")" + " - " + texte + "»");
 	}
 	
 	public void direBonjour() {
@@ -31,12 +31,12 @@ public class Humain {
 		parler("Mmmm, un bon verre de " + boissonFav + " ! GLOUPS !");
 	}
 	
-	private void gagnerArgent(int gain) {
-		
+	public void gagnerArgent(int gain) {
+		argent+=gain;
 	}
 	
-	private void perdreArgent(int perte) {
-		
+	public void perdreArgent(int perte) {
+		argent-=perte;
 	}
 	
 	public void acheter(String bien, int prix) {
