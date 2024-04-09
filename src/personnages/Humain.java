@@ -3,7 +3,7 @@ package personnages;
 public class Humain {
 	private String nom;
 	private String boissonFav;
-	private int argent;
+	protected int argent;
 	
 	public Humain(String nom, String boissonFav, int argent) {
 		this.nom = nom;
@@ -48,12 +48,4 @@ public class Humain {
 		argent-=prix;
 	}
 	
-	public static void main(String[] args) {
-		Humain prof = new Humain("Prof", "kombucha", 54);
-		prof.direBonjour();
-		prof.acheter("une boisson", 12);
-		prof.boire();
-		prof.acheter("un jeu", 2);
-		prof.acheter("un kimono", 50);
-	}
 }
